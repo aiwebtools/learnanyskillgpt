@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                 <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">Learn Any Skill GPT</a>
               </li>
               <li>
-                <a href="https://chatgpt.com/g/g-6730d59e8e648190be4221e319aad5cd-learn-any-course-gpt" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">Learn Any Course GPT</a>
+                <a href="https://learnanycourse.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">Learn Any Course GPT</a>
               </li>
               <li>
                 <a href="https://docs.google.com/document/d/1qtDKo3XN_EsspgrQD72Cpq2qh83H5xSd/edit?usp=sharing&ouid=116187507271950139405&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">Ai Tools Free Downloadable List</a>
