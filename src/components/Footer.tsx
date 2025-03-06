@@ -57,13 +57,6 @@ const Footer: React.FC = () => {
                   </Button>
                 </a>
               </li>
-              <li className="pt-1">
-                <a href="https://chatgpt.com/g/g-cUahkn19i-quiz-maker-ai" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="sm" className="w-full">
-                    QUIZ MAKER GPT
-                  </Button>
-                </a>
-              </li>
             </ul>
           </div>
           
