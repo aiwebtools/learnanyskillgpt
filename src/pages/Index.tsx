@@ -7,6 +7,7 @@ import HowItWorks from '@/components/HowItWorks';
 import CourseExample from '@/components/CourseExample';
 import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
+import DisclaimerPopup from '@/components/DisclaimerPopup';
 
 const Index = () => {
   // Ensure smooth scrolling for anchor links
@@ -49,6 +50,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <DisclaimerPopup />
       <main>
         <Hero />
         <HowItWorks />
