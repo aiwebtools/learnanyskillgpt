@@ -15,7 +15,7 @@ const Index = () => {
     const preloadVideo = () => {
       const link = document.createElement('link');
       link.rel = 'preload';
-      link.href = 'https://www.youtube.com/embed/q1AY2LukHrk?autoplay=1&mute=0&vq=hd1080';
+      link.href = 'https://www.youtube.com/embed/0_oIzDL2BB4?autoplay=1&mute=0&vq=hd1080';
       link.as = 'iframe';
       document.head.appendChild(link);
     };

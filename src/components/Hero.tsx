@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
             <div className="relative rounded-xl overflow-hidden bg-slate-900 aspect-video w-full">
               {/* Embed YouTube with autoplay, unmuted, 1080p quality, and preload for faster loading */}
               <iframe 
-                src="https://www.youtube.com/embed/q1AY2LukHrk?autoplay=1&mute=0&vq=hd1080&rel=0&modestbranding=1" 
+                src="https://www.youtube.com/embed/0_oIzDL2BB4?autoplay=1&mute=0&vq=hd1080&rel=0&modestbranding=1" 
                 className="w-full h-full aspect-video"
                 title="Learn Any Skill GPT Tutorial - Free AI Tools Demo"
                 frameBorder="0"
