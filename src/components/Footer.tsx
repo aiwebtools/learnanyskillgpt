@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold mb-3 text-sm">AI Web Tools LLC</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="About AiWebTools.AI - Free AI Tools Provider">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="About AiWebTools.AI - Free AI Tools Provider">
                   About AiWebTools.AI
                 </a>
               </li>
