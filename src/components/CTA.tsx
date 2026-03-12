@@ -15,7 +15,7 @@ const CTA: React.FC = () => {
         <Button 
           size="lg" 
           className="px-8 py-6 text-lg font-semibold bg-gray-800 hover:bg-gray-700 rounded-md shadow-lg transition-all"
-          onClick={() => window.open('https://www.aiwebtools.ai', '_blank')}
+          onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
           aria-label="Explore AiWebTools.AI - Free AI Tools Collection"
         >
           Explore AiWebTools.AI - Free AI Tools
