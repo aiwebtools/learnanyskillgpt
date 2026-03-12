@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               <span className="font-bold tracking-tight">Learn Any Skill GPT</span>
             </div>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block mb-4 text-sm text-primary hover:text-primary/90 transition-colors font-medium"
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                 <a href="https://chatgpt.com/g/g-cUahkn19i-quiz-maker-ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Quiz Maker GPT - Free AI Quiz Creation Tool">Quiz Maker GPT - Free AI Tool</a>
               </li>
               <li className="pt-2">
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" title="More Free AI Tools at AiWebTools.AI">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" title="More Free AI Tools at AiWebTools.AI">
                   <Button variant="outline" size="sm" className="w-full">
                     MORE FREE AI TOOLS
                   </Button>
@@ -65,12 +65,12 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold mb-3 text-sm">AI Web Tools LLC</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="About AiWebTools.AI - Free AI Tools Provider">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="About AiWebTools.AI - Free AI Tools Provider">
                   About AiWebTools.AI
                 </a>
               </li>
               <li>
-                <a href="https://aiwebtools.ai/terms-of-services" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Terms of Service - AI Web Tools">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Terms of Service - AI Web Tools">
                   Terms of Service
                 </a>
               </li>

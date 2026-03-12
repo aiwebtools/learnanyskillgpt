@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
             size="lg" 
             variant="outline" 
             className="rounded-full px-8 py-6 text-base border-white text-white hover:bg-white/20 font-semibold"
-            onClick={() => window.open('https://www.aiwebtools.ai', '_blank')}
+            onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
             aria-label="Explore more free AI tools at AiWebTools.AI"
           >
             Explore More Free AI Tools
