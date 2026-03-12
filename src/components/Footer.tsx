@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
               <span className="font-bold tracking-tight">Learn Any Skill GPT</span>
             </div>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-block mb-4 text-sm text-primary hover:text-primary/90 transition-colors font-medium"
