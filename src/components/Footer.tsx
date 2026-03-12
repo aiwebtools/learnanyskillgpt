@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                 <a href="https://chatgpt.com/g/g-cUahkn19i-quiz-maker-ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Quiz Maker GPT - Free AI Quiz Creation Tool">Quiz Maker GPT - Free AI Tool</a>
               </li>
               <li className="pt-2">
-                <a href="https://www.aiwebtools.ai" target="_blank" rel="noopener noreferrer" title="More Free AI Tools at AiWebTools.AI">
+                <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" title="More Free AI Tools at AiWebTools.AI">
                   <Button variant="outline" size="sm" className="w-full">
                     MORE FREE AI TOOLS
                   </Button>
