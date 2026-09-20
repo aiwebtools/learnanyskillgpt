@@ -29,17 +29,26 @@ const Navbar: React.FC = () => {
     document.body.style.overflow = 'auto';
   }, []);
 
-  // Close mobile menu when clicking outside
+  // Close mobile menu when clicking outside.
+  // Register on the next tick so the same click that opened the menu
+  // never triggers this handler (React swaps the icon mid-dispatch,
+  // detaching the original event target).
   useEffect(() => {
     if (!mobileMenuOpen) return;
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
+      if (!target.isConnected) return;
       if (!target.closest('.mobile-menu-container') && !target.closest('.mobile-menu-button')) {
         closeMobileMenu();
       }
     };
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
+    const t = window.setTimeout(() => {
+      document.addEventListener('click', handleClickOutside);
+    }, 0);
+    return () => {
+      window.clearTimeout(t);
+      document.removeEventListener('click', handleClickOutside);
+    };
   }, [mobileMenuOpen, closeMobileMenu]);
 
   // Close menu on resize to desktop
