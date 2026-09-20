@@ -29,17 +29,26 @@ const Navbar: React.FC = () => {
     document.body.style.overflow = 'auto';
   }, []);
 
-  // Close mobile menu when clicking outside
+  // Close mobile menu when clicking outside.
+  // Register on the next tick so the same click that opened the menu
+  // never triggers this handler (React swaps the icon mid-dispatch,
+  // detaching the original event target).
   useEffect(() => {
     if (!mobileMenuOpen) return;
     const handleClickOutside = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
+      if (!target.isConnected) return;
       if (!target.closest('.mobile-menu-container') && !target.closest('.mobile-menu-button')) {
         closeMobileMenu();
       }
     };
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
+    const t = window.setTimeout(() => {
+      document.addEventListener('click', handleClickOutside);
+    }, 0);
+    return () => {
+      window.clearTimeout(t);
+      document.removeEventListener('click', handleClickOutside);
+    };
   }, [mobileMenuOpen, closeMobileMenu]);
 
   // Close menu on resize to desktop
@@ -77,15 +86,15 @@ const Navbar: React.FC = () => {
               <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <div className="flex flex-col min-w-0">
-              <span className="font-bold text-sm sm:text-base lg:text-lg tracking-tight text-foreground truncate">Learn Any Skill GPT</span>
-              <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-[10px] sm:text-xs text-muted-foreground hover:underline truncate">Presented by AiWebTools.AI</a>
+              <span className="font-bold text-sm sm:text-base lg:text-lg tracking-tight text-gray-900 truncate">Learn Any Skill GPT</span>
+              <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-[10px] sm:text-xs text-gray-600 hover:underline truncate">Presented by AiWebTools.AI</a>
             </div>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2 lg:gap-4 xl:gap-6 ml-4">
             {navLinks.map(link => (
-              <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="link-underline text-xs lg:text-sm font-medium text-foreground whitespace-nowrap">
+              <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="link-underline text-xs lg:text-sm font-medium text-gray-900 whitespace-nowrap">
                 {link.label}
               </a>
             ))}
@@ -101,12 +110,12 @@ const Navbar: React.FC = () => {
               </Button>
             </div>
             <button 
-              className="md:hidden p-2 rounded-md mobile-menu-button touch-manipulation"
+              className="md:hidden p-2 rounded-md mobile-menu-button touch-manipulation text-gray-900"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
               aria-expanded={mobileMenuOpen}
             >
-              {mobileMenuOpen ? <X className="h-5 w-5 text-foreground" /> : <Menu className="h-5 w-5 text-foreground" />}
+              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
           </div>
         </div>
@@ -125,7 +134,7 @@ const Navbar: React.FC = () => {
                 href={link.href} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="block py-2.5 text-sm font-medium text-foreground active:bg-accent/50 rounded-md px-2 -mx-2 touch-manipulation"
+                className="block py-2.5 text-sm font-medium text-gray-900 active:bg-accent/50 rounded-md px-2 -mx-2 touch-manipulation"
                 onClick={closeMobileMenu}
               >
                 {link.label}
