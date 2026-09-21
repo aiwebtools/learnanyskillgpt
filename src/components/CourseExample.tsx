@@ -10,7 +10,7 @@ const CourseExample: React.FC = () => {
       <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent" aria-hidden="true"></div>
       <div className="section-container relative z-10">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
-          <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" className="inline-block" aria-label="Try Learn Any Skill GPT free AI tool now">
+          <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" className="inline-block" aria-label="Try Learn Any Skill GPT CHATGPT version external custom GPT now">
             <span className="chip mb-6 cursor-pointer hover:bg-primary/90 transition-colors">See Our Free AI Tool In Action (CHATGPT version)</span>
           </a>
           <h2 id="example-heading" className="heading mb-6">Master Any Skill with AI-Guided Learning - Free AI Tools</h2>
@@ -31,7 +31,7 @@ const CourseExample: React.FC = () => {
                 className="rounded-full px-8 py-6 text-base font-semibold bg-primary text-white hover:bg-primary/90"
                 asChild
               >
-                <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning now with our free AI tool">
+                <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning now with Learn Any Skill GPT CHATGPT version external custom GPT">
                   Start Learning Now - Free AI Tool (CHATGPT version) <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                 </a>
               </Button>
