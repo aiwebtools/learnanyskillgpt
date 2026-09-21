@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
   // Close menu on resize to desktop
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768 && mobileMenuOpen) {
+      if (window.innerWidth >= 1280 && mobileMenuOpen) {
         closeMobileMenu();
       }
     };
