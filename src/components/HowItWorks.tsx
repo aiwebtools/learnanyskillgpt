@@ -137,7 +137,7 @@ const HowItWorks: React.FC = () => {
                     onClick={() => window.open('https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt', '_blank')}
                     aria-label="Access Learn Any Skill GPT free AI tool"
                   >
-                    Access Free AI Tool
+                    Access Free AI Tool (ChatGPT version)
                   </button>
                 </div>
               </div>

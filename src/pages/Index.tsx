@@ -6,6 +6,7 @@ import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
 import CourseExample from '@/components/CourseExample';
 import CTA from '@/components/CTA';
+import CreditFallback from '@/components/CreditFallback';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -52,6 +53,7 @@ const Index = () => {
       <main>
         <Hero />
         <HowItWorks />
+        <CreditFallback />
         <CTA />
         <Features />
         <CourseExample />

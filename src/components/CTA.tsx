@@ -18,7 +18,7 @@ const CTA: React.FC = () => {
           onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
           aria-label="Explore AiWebTools.AI - Free AI Tools Collection"
         >
-          Explore AiWebTools.AI - Free AI Tools
+          Explore AiWebTools.AI - Free AI Tools (INSITE version)
         </Button>
       </div>
       
@@ -40,7 +40,7 @@ const CTA: React.FC = () => {
                 onClick={() => window.open('https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt', '_blank')}
                 aria-label="Start learning now with Learn Any Skill GPT free AI tool"
               >
-                Start Learning Now - Free AI Tool
+                Start Learning Now - Free AI Tool (ChatGPT version)
               </Button>
               <Button 
                 size="lg" 
@@ -49,7 +49,7 @@ const CTA: React.FC = () => {
                 onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
                 aria-label="Explore more free AI tools at AiWebTools.AI"
               >
-                Explore More Free AI Tools
+                Explore More Free AI Tools (INSITE version)
               </Button>
             </div>
           </GlassMorphism>
