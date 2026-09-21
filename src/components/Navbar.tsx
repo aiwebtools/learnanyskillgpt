@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
           </div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-2 lg:gap-4 xl:gap-6 ml-4">
+          <nav className="hidden xl:flex items-center gap-3 2xl:gap-6 ml-4">
             {navLinks.map(link => (
               <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="link-underline text-xs lg:text-sm font-medium text-gray-900 whitespace-nowrap">
                 {link.label}
@@ -101,8 +101,8 @@ const Navbar: React.FC = () => {
           </nav>
           
           {/* Actions */}
-          <div className="flex items-center gap-2 ml-auto md:ml-4 shrink-0">
-            <div className="hidden md:block">
+          <div className="flex items-center gap-2 ml-auto xl:ml-4 shrink-0">
+            <div className="hidden sm:block">
               <Button size="sm" className="rounded-full px-4 lg:px-5 py-1 h-8 text-xs lg:text-sm" asChild>
                 <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer">
                   Get Started (ChatGPT version)
@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
               </Button>
             </div>
             <button 
-              className="md:hidden p-2 rounded-md mobile-menu-button touch-manipulation text-gray-900"
+              className="xl:hidden p-2 rounded-md mobile-menu-button touch-manipulation text-gray-900"
               onClick={toggleMobileMenu}
               aria-label="Toggle mobile menu"
               aria-expanded={mobileMenuOpen}
@@ -123,7 +123,7 @@ const Navbar: React.FC = () => {
         {/* Mobile Navigation - CSS transition for instant feel */}
         <div 
           className={cn(
-            'md:hidden overflow-hidden transition-all duration-200 ease-out mobile-menu-container',
+            'xl:hidden overflow-hidden transition-all duration-200 ease-out mobile-menu-container',
             mobileMenuOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
           )}
         >
