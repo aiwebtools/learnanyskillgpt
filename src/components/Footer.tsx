@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
                 <a href="https://docs.google.com/document/d/1TpVG9pncULpkHy9IhAjyXIgScyTW703Lf-IQKkXeJs4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Free College Degree GPT Prompt - AI Education Tool">Open Source College Degree GPT Prompt (Google Docs version)</a>
               </li>
               <li>
-                <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Learn Any Skill GPT - Free AI Learning Tool">Learn Any Skill GPT - Free AI Tool (ChatGPT version)</a>
+                <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Learn Any Skill GPT - Free AI Learning Tool">Learn Any Skill GPT - Free AI Tool (CHATGPT version)</a>
               </li>
               <li>
                 <a href="https://learnanycourse.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Learn Any Course GPT - Free AI Course Creator">Learn Any Course GPT - Free AI Tool (INSITE version)</a>
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
                 <a href="https://college-degree-gpt.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="College Degree GPT - Free AI Education Tool">College Degree GPT - Free AI Tool (INSITE version)</a>
               </li>
               <li>
-                <a href="https://chatgpt.com/g/g-cUahkn19i-quiz-maker-ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Quiz Maker GPT - Free AI Quiz Creation Tool">Quiz Maker GPT - Free AI Tool (ChatGPT version)</a>
+                <a href="https://chatgpt.com/g/g-cUahkn19i-quiz-maker-ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Quiz Maker GPT - Free AI Quiz Creation Tool">Quiz Maker GPT - Free AI Tool (CHATGPT version)</a>
               </li>
               <li className="pt-2">
                 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" title="More Free AI Tools at AiWebTools.AI">

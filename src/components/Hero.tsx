@@ -41,8 +41,8 @@ const Hero: React.FC = () => {
             className="rounded-full px-8 py-6 text-base font-semibold bg-white text-slate-900 hover:bg-white/90"
             asChild
           >
-            <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning with Learn Any Skill GPT - Free AI Tool">
-              Start Learning Now (ChatGPT version)
+            <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning with Learn Any Skill GPT CHATGPT version external custom GPT">
+              Start Learning Now (CHATGPT version)
             </a>
           </Button>
           <Button 
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             variant="outline" 
             className="rounded-full px-8 py-6 text-base border-white text-white hover:bg-white/20 font-semibold"
             onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-            aria-label="Explore more free AI tools at AiWebTools.AI"
+            aria-label="Explore more free AI tools at AiWebTools.AI INSITE version"
           >
             Explore More Free AI Tools (INSITE version)
           </Button>

@@ -16,7 +16,7 @@ const CTA: React.FC = () => {
           size="lg" 
           className="px-8 py-6 text-lg font-semibold bg-gray-800 hover:bg-gray-700 rounded-md shadow-lg transition-all"
           onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-          aria-label="Explore AiWebTools.AI - Free AI Tools Collection"
+          aria-label="Explore AiWebTools.AI free AI tools collection INSITE version"
         >
           Explore AiWebTools.AI - Free AI Tools (INSITE version)
         </Button>
@@ -38,16 +38,16 @@ const CTA: React.FC = () => {
                 size="lg" 
                 className="rounded-full px-8 py-6 text-base w-full md:w-auto"
                 onClick={() => window.open('https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt', '_blank')}
-                aria-label="Start learning now with Learn Any Skill GPT free AI tool"
+                aria-label="Start learning now with Learn Any Skill GPT CHATGPT version external custom GPT"
               >
-                Start Learning Now - Free AI Tool (ChatGPT version)
+                Start Learning Now - Free AI Tool (CHATGPT version)
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
                 className="rounded-full px-8 py-6 text-base w-full md:w-auto"
                 onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-                aria-label="Explore more free AI tools at AiWebTools.AI"
+                aria-label="Explore more free AI tools at AiWebTools.AI INSITE version"
               >
                 Explore More Free AI Tools (INSITE version)
               </Button>

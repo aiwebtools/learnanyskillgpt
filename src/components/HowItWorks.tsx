@@ -135,9 +135,9 @@ const HowItWorks: React.FC = () => {
                   <button 
                     className="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-colors" 
                     onClick={() => window.open('https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt', '_blank')}
-                    aria-label="Access Learn Any Skill GPT free AI tool"
+                    aria-label="Access Learn Any Skill GPT CHATGPT version external custom GPT"
                   >
-                    Access Free AI Tool (ChatGPT version)
+                    Access Free AI Tool (CHATGPT version)
                   </button>
                 </div>
               </div>
