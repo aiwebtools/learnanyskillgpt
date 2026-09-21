@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               className="inline-block mb-4 text-sm text-primary hover:text-primary/90 transition-colors font-medium"
               title="AiWebTools.AI - Premium Free AI Tools Collection"
             >
-              Presented By AiWebTools.AI - Free AI Tools
+              Presented By AiWebTools.AI - Free AI Tools (INSITE version)
             </a>
             <p className="text-sm text-muted-foreground">
               Your personal AI tutor powered by free AI tools, offering comprehensive step-by-step guidance to master any skill from beginner to expert with AI web tools.
@@ -34,27 +34,27 @@ const Footer: React.FC = () => {
             <h3 className="font-semibold mb-3 text-sm">Free AI Tools & Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://docs.google.com/document/d/1TpVG9pncULpkHy9IhAjyXIgScyTW703Lf-IQKkXeJs4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Free College Degree GPT Prompt - AI Education Tool">Open Source College Degree GPT Prompt</a>
+                <a href="https://docs.google.com/document/d/1TpVG9pncULpkHy9IhAjyXIgScyTW703Lf-IQKkXeJs4/edit?tab=t.0" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Free College Degree GPT Prompt - AI Education Tool">Open Source College Degree GPT Prompt (Google Docs version)</a>
               </li>
               <li>
-                <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Learn Any Skill GPT - Free AI Learning Tool">Learn Any Skill GPT - Free AI Tool</a>
+                <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Learn Any Skill GPT - Free AI Learning Tool">Learn Any Skill GPT - Free AI Tool (ChatGPT version)</a>
               </li>
               <li>
-                <a href="https://learnanycourse.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Learn Any Course GPT - Free AI Course Creator">Learn Any Course GPT - Free AI Tool</a>
+                <a href="https://learnanycourse.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Learn Any Course GPT - Free AI Course Creator">Learn Any Course GPT - Free AI Tool (INSITE version)</a>
               </li>
               <li>
-                <a href="https://docs.google.com/document/d/1qtDKo3XN_EsspgrQD72Cpq2qh83H5xSd/edit?usp=sharing&ouid=116187507271950139405&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Free AI Tools List Download">Free AI Tools Downloadable List</a>
+                <a href="https://docs.google.com/document/d/1qtDKo3XN_EsspgrQD72Cpq2qh83H5xSd/edit?usp=sharing&ouid=116187507271950139405&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Free AI Tools List Download">Free AI Tools Downloadable List (Google Docs version)</a>
               </li>
               <li>
-                <a href="https://college-degree-gpt.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="College Degree GPT - Free AI Education Tool">College Degree GPT - Free AI Tool</a>
+                <a href="https://college-degree-gpt.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="College Degree GPT - Free AI Education Tool">College Degree GPT - Free AI Tool (INSITE version)</a>
               </li>
               <li>
-                <a href="https://chatgpt.com/g/g-cUahkn19i-quiz-maker-ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Quiz Maker GPT - Free AI Quiz Creation Tool">Quiz Maker GPT - Free AI Tool</a>
+                <a href="https://chatgpt.com/g/g-cUahkn19i-quiz-maker-ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Quiz Maker GPT - Free AI Quiz Creation Tool">Quiz Maker GPT - Free AI Tool (ChatGPT version)</a>
               </li>
               <li className="pt-2">
                 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" title="More Free AI Tools at AiWebTools.AI">
                   <Button variant="outline" size="sm" className="w-full">
-                    MORE FREE AI TOOLS
+                    MORE FREE AI TOOLS (INSITE version)
                   </Button>
                 </a>
               </li>
@@ -66,12 +66,12 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="About AiWebTools.AI - Free AI Tools Provider">
-                  About AiWebTools.AI
+                  About AiWebTools.AI (INSITE version)
                 </a>
               </li>
               <li>
                 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" title="Terms of Service - AI Web Tools">
-                  Terms of Service
+                  Terms of Service (INSITE version)
                 </a>
               </li>
               <li>

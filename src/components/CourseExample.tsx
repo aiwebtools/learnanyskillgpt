@@ -11,7 +11,7 @@ const CourseExample: React.FC = () => {
       <div className="section-container relative z-10">
         <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
           <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" className="inline-block" aria-label="Try Learn Any Skill GPT free AI tool now">
-            <span className="chip mb-6 cursor-pointer hover:bg-primary/90 transition-colors">See Our Free AI Tool In Action</span>
+            <span className="chip mb-6 cursor-pointer hover:bg-primary/90 transition-colors">See Our Free AI Tool In Action (ChatGPT version)</span>
           </a>
           <h2 id="example-heading" className="heading mb-6">Master Any Skill with AI-Guided Learning - Free AI Tools</h2>
           <p className="subheading max-w-2xl mx-auto">Learn Any Skill GPT takes you from beginner to expert with personalized instruction, curated YouTube videos, and visual learning aids. No matter what you want to learn, our free AI teacher is ready to guide you every step of the way.</p>
@@ -32,7 +32,7 @@ const CourseExample: React.FC = () => {
                 asChild
               >
                 <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning now with our free AI tool">
-                  Start Learning Now - Free AI Tool <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+                  Start Learning Now - Free AI Tool (ChatGPT version) <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                 </a>
               </Button>
             </GlassMorphism>

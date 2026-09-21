@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
       
       <div className="section-container relative z-10 flex flex-col items-center justify-center">
         <AnimatedSection animation="fade-in-down" className="mb-6">
-          <span className="chip bg-white/20 text-white font-medium">Free AI Tools by AiWebTools.AI</span>
+          <span className="chip bg-white/20 text-white font-medium">Free AI Tools by AiWebTools.AI (INSITE version)</span>
         </AnimatedSection>
         
         <AnimatedSection animation="fade-in" className="text-center mb-6">
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             asChild
           >
             <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning with Learn Any Skill GPT - Free AI Tool">
-              Start Learning Now
+              Start Learning Now (ChatGPT version)
             </a>
           </Button>
           <Button 
@@ -52,7 +52,7 @@ const Hero: React.FC = () => {
             onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
             aria-label="Explore more free AI tools at AiWebTools.AI"
           >
-            Explore More Free AI Tools
+            Explore More Free AI Tools (INSITE version)
           </Button>
         </AnimatedSection>
         

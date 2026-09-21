@@ -68,11 +68,11 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Learn Any Skill GPT', href: 'https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt' },
-    { label: 'Learn Any Course GPT', href: 'https://learnanycourse.lovable.app/' },
-    { label: 'College Degree GPT', href: 'https://college-degree-gpt.lovable.app/' },
-    { label: 'Talk to History GPT', href: 'https://talk-to-history-gpt.lovable.app/' },
-    { label: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools' },
+    { label: 'Learn Any Skill GPT (ChatGPT version)', href: 'https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt' },
+    { label: 'Learn Any Course GPT (INSITE version)', href: 'https://learnanycourse.lovable.app/' },
+    { label: 'College Degree GPT (INSITE version)', href: 'https://college-degree-gpt.lovable.app/' },
+    { label: 'Talk to History GPT (INSITE version)', href: 'https://talk-to-history-gpt.lovable.app/' },
+    { label: 'More AI Tools (INSITE version)', href: 'https://aiwebtools.lovable.app/?via=aiwebtools' },
   ];
 
   return (
@@ -87,7 +87,7 @@ const Navbar: React.FC = () => {
             </svg>
             <div className="flex flex-col min-w-0">
               <span className="font-bold text-sm sm:text-base lg:text-lg tracking-tight text-gray-900 truncate">Learn Any Skill GPT</span>
-              <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-[10px] sm:text-xs text-gray-600 hover:underline truncate">Presented by AiWebTools.AI</a>
+              <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-[10px] sm:text-xs text-gray-600 hover:underline truncate">Presented by AiWebTools.AI (INSITE version)</a>
             </div>
           </div>
           
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
             <div className="hidden md:block">
               <Button size="sm" className="rounded-full px-4 lg:px-5 py-1 h-8 text-xs lg:text-sm" asChild>
                 <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer">
-                  Get Started
+                  Get Started (ChatGPT version)
                 </a>
               </Button>
             </div>
@@ -142,7 +142,7 @@ const Navbar: React.FC = () => {
             ))}
             <Button size="sm" className="w-full rounded-full mt-3 py-2 h-10 text-sm" asChild>
               <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
-                Get Started
+                Get Started (ChatGPT version)
               </a>
             </Button>
           </div>
