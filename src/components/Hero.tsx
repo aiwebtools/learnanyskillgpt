@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             asChild
           >
             <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning with Learn Any Skill GPT - Free AI Tool">
-              Start Learning Now (ChatGPT version)
+              Start Learning Now (CHATGPT version)
             </a>
           </Button>
           <Button 

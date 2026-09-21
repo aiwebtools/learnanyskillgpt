@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { label: 'Learn Any Skill GPT (ChatGPT version)', href: 'https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt' },
+    { label: 'Learn Any Skill GPT (CHATGPT version)', href: 'https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt' },
     { label: 'Learn Any Course GPT (INSITE version)', href: 'https://learnanycourse.lovable.app/' },
     { label: 'College Degree GPT (INSITE version)', href: 'https://college-degree-gpt.lovable.app/' },
     { label: 'Talk to History GPT (INSITE version)', href: 'https://talk-to-history-gpt.lovable.app/' },
@@ -105,7 +105,7 @@ const Navbar: React.FC = () => {
             <div className="hidden sm:block">
               <Button size="sm" className="rounded-full px-4 lg:px-5 py-1 h-8 text-xs lg:text-sm" asChild>
                 <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer">
-                  Get Started (ChatGPT version)
+                  Get Started (CHATGPT version)
                 </a>
               </Button>
             </div>
@@ -142,7 +142,7 @@ const Navbar: React.FC = () => {
             ))}
             <Button size="sm" className="w-full rounded-full mt-3 py-2 h-10 text-sm" asChild>
               <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>
-                Get Started (ChatGPT version)
+                Get Started (CHATGPT version)
               </a>
             </Button>
           </div>

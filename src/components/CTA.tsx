@@ -40,7 +40,7 @@ const CTA: React.FC = () => {
                 onClick={() => window.open('https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt', '_blank')}
                 aria-label="Start learning now with Learn Any Skill GPT free AI tool"
               >
-                Start Learning Now - Free AI Tool (ChatGPT version)
+                Start Learning Now - Free AI Tool (CHATGPT version)
               </Button>
               <Button 
                 size="lg" 
