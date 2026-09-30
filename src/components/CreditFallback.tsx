@@ -15,7 +15,7 @@ const CreditFallback: React.FC = () => {
           <p className="text-gray-200 max-w-2xl mx-auto mb-6">
             If community credits have run out for today, please try the CHATGPT version below so you can keep learning without waiting.
           </p>
-          <Button size="lg" className="rounded-full px-6 py-6 text-base font-semibold" asChild>
+          <Button size="lg" className="h-auto w-full whitespace-normal rounded-full px-5 py-4 text-center text-sm font-semibold sm:w-auto sm:px-6 sm:py-6 sm:text-base" asChild>
             <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Open Learn Any Skill GPT CHATGPT version if community credits are out">
               Try Learn Any Skill GPT (CHATGPT version) <ArrowRight className="h-5 w-5" aria-hidden="true" />
             </a>

@@ -35,10 +35,10 @@ const Hero: React.FC = () => {
           </p>
         </AnimatedSection>
         
-        <AnimatedSection animation="fade-in-up" delay={0.2} className="mt-8 space-x-4">
+        <AnimatedSection animation="fade-in-up" delay={0.2} className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
           <Button 
             size="lg" 
-            className="rounded-full px-8 py-6 text-base font-semibold bg-white text-slate-900 hover:bg-white/90"
+            className="h-auto w-full whitespace-normal rounded-full bg-white px-5 py-4 text-center text-sm font-semibold text-slate-900 hover:bg-white/90 sm:w-auto sm:px-8 sm:py-6 sm:text-base"
             asChild
           >
             <a href="https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt" target="_blank" rel="noopener noreferrer" aria-label="Start learning with Learn Any Skill GPT CHATGPT version external custom GPT">
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="rounded-full px-8 py-6 text-base border-white text-white hover:bg-white/20 font-semibold"
+            className="h-auto w-full whitespace-normal rounded-full border-white px-5 py-4 text-center text-sm font-semibold text-white hover:bg-white/20 sm:w-auto sm:px-8 sm:py-6 sm:text-base"
             onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
             aria-label="Explore more free AI tools at AiWebTools.AI INSITE version"
           >
