@@ -11,10 +11,10 @@ const CTA: React.FC = () => {
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-30"></div>
       <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/10 rounded-full filter blur-2xl opacity-30"></div>
       
-      <div className="flex justify-center mb-8">
+      <div className="mx-auto mb-8 flex max-w-lg justify-center px-4">
         <Button 
           size="lg" 
-          className="px-8 py-6 text-lg font-semibold bg-gray-800 hover:bg-gray-700 rounded-md shadow-lg transition-all"
+          className="h-auto w-full whitespace-normal rounded-md bg-gray-800 px-4 py-4 text-center text-base font-semibold shadow-lg transition-all hover:bg-gray-700 sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
           onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
           aria-label="Explore AiWebTools.AI free AI tools collection INSITE version"
         >
@@ -33,10 +33,10 @@ const CTA: React.FC = () => {
               Whether you want to learn photography, coding, cooking, or any other skill, Learn Any Skill GPT provides personalized instruction with curated YouTube videos and visual aids. Join thousands using our free AI tools for education.
             </p>
             
-            <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
+            <div className="flex flex-col gap-4 md:flex-row md:justify-center">
               <Button 
                 size="lg" 
-                className="rounded-full px-8 py-6 text-base w-full md:w-auto"
+                className="h-auto w-full whitespace-normal rounded-full px-5 py-4 text-center text-sm md:w-auto md:px-8 md:py-6 md:text-base"
                 onClick={() => window.open('https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt', '_blank')}
                 aria-label="Start learning now with Learn Any Skill GPT CHATGPT version external custom GPT"
               >
@@ -45,7 +45,7 @@ const CTA: React.FC = () => {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="rounded-full px-8 py-6 text-base w-full md:w-auto"
+                className="h-auto w-full whitespace-normal rounded-full px-5 py-4 text-center text-sm md:w-auto md:px-8 md:py-6 md:text-base"
                 onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
                 aria-label="Explore more free AI tools at AiWebTools.AI INSITE version"
               >

@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { cn } from '@/lib/utils';
 import AnimatedSection from './AnimatedSection';
 import GlassMorphism from './ui/GlassMorphism';
+import { Button } from '@/components/ui/button';
 
 interface StepProps {
   number: number;
@@ -128,17 +128,19 @@ const HowItWorks: React.FC = () => {
                   </div>
                 </div>
                 
-                <div className="bg-secondary/30 p-4 flex justify-between items-center border-t border-border">
-                  <button className="text-sm text-gray-700 hover:text-gray-900 transition-colors" aria-label="Go to previous lesson">
+                <div className="flex flex-col items-stretch gap-3 border-t border-border bg-secondary/30 p-4 sm:flex-row sm:items-center sm:justify-between">
+                  <Button type="button" variant="ghost" size="sm" className="text-gray-700 hover:text-gray-900" aria-label="Go to previous lesson">
                     Previous Lesson
-                  </button>
-                  <button 
-                    className="bg-primary text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-primary/90 transition-colors" 
+                  </Button>
+                  <Button
+                    type="button"
+                    size="sm"
+                    className="h-auto w-full whitespace-normal py-2 text-center sm:w-auto"
                     onClick={() => window.open('https://chatgpt.com/g/g-677690e9535c81919b3acbd5ec088644-learn-any-skill-gpt', '_blank')}
                     aria-label="Access Learn Any Skill GPT CHATGPT version external custom GPT"
                   >
                     Access Free AI Tool (CHATGPT version)
-                  </button>
+                  </Button>
                 </div>
               </div>
             </GlassMorphism>
