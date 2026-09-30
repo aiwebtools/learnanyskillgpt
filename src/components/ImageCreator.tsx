@@ -59,6 +59,7 @@ const ImageCreator: React.FC = () => {
     setIsGenerating(true);
 
     try {
+      let finalImage = '';
       const projectUrl = import.meta.env.VITE_SUPABASE_URL;
       const publishableKey = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
       if (!projectUrl || !publishableKey) throw new Error('Image creation is not configured yet.');
@@ -70,10 +71,15 @@ const ImageCreator: React.FC = () => {
         (nextImage, finalFrame) => {
           setImageUrl(nextImage);
           setIsFinal(finalFrame);
+          if (finalFrame) finalImage = nextImage;
         },
         { apikey: publishableKey, Authorization: `Bearer ${authToken}` },
       );
-      setImageUrl((current) => current);
+      if (finalImage) {
+        const brandedImage = await addBrandMark(finalImage);
+        setImageUrl(brandedImage);
+        setIsFinal(true);
+      }
     } catch (caught) {
       setError(caught instanceof Error ? caught.message : 'Image creation failed. Please try again.');
     } finally {
@@ -84,10 +90,8 @@ const ImageCreator: React.FC = () => {
   const downloadImage = async () => {
     if (!imageUrl || !isFinal) return;
     try {
-      const brandedImage = await addBrandMark(imageUrl);
-      setImageUrl(brandedImage);
       const link = document.createElement('a');
-      link.href = brandedImage;
+      link.href = imageUrl;
       link.download = 'aiwebtools-learning-image.png';
       link.click();
     } catch (caught) {
