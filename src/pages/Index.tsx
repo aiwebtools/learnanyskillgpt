@@ -8,6 +8,7 @@ import CourseExample from '@/components/CourseExample';
 import CTA from '@/components/CTA';
 import CreditFallback from '@/components/CreditFallback';
 import ImageCreator from '@/components/ImageCreator';
+import SkillTeacher from '@/components/SkillTeacher';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -53,6 +54,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <SkillTeacher />
         <ImageCreator />
         <HowItWorks />
         <CreditFallback />
