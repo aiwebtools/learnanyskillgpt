@@ -77,11 +77,12 @@ Deno.serve(async (req) => {
         headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
         body: JSON.stringify({
           model: TTS_MODEL,
-          contents: [{ parts: [{ text: `Read this lesson in a warm, clear, encouraging teacher voice: ${text}` }] }],
+          contents: [{ role: "user", parts: [{ text: `Read this lesson in a warm, clear, encouraging teacher voice: ${text}` }] }],
           generationConfig: {
             responseModalities: ["AUDIO"],
             speechConfig: { voiceConfig: { prebuiltVoiceConfig: { voiceName: "Kore" } } },
           },
+          stream_format: "audio",
         }),
       });
       if (!upstream.ok) return passError(upstream);
