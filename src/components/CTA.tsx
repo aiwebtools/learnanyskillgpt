@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { openTeacher } from '@/lib/open-teacher';
 import { Button } from '@/components/ui/button';
 import AnimatedSection from './AnimatedSection';
 import GlassMorphism from './ui/GlassMorphism';
@@ -7,16 +8,16 @@ import GlassMorphism from './ui/GlassMorphism';
 const CTA: React.FC = () => {
   return (
     <section className="py-24 relative overflow-hidden" role="region" aria-labelledby="cta-heading">
-      <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent"></div>
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-30"></div>
-      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-primary/10 rounded-full filter blur-2xl opacity-30"></div>
+      <div className="pointer-events-none absolute inset-0 bg-gradient-radial from-primary/5 to-transparent"></div>
+      <div className="pointer-events-none absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-30"></div>
+      <div className="pointer-events-none absolute bottom-0 right-1/4 w-64 h-64 bg-primary/10 rounded-full filter blur-2xl opacity-30"></div>
       
-      <div className="mx-auto mb-8 flex max-w-lg justify-center px-4">
+      <div className="relative z-10 mx-auto mb-8 flex max-w-lg justify-center px-4">
         <Button 
           size="lg" 
           className="h-auto w-full whitespace-normal rounded-md bg-gray-800 px-4 py-4 text-center text-base font-semibold shadow-lg transition-all hover:bg-gray-700 sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
-          onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-          aria-label="Explore AiWebTools.AI free AI tools collection INSITE version"
+          onClick={() => openTeacher()}
+          aria-label="Explore AiWebTools.AI free AI tools INSITE version - opens the on-site AI teacher"
         >
           Explore AiWebTools.AI - Free AI Tools (INSITE version)
         </Button>
@@ -46,8 +47,8 @@ const CTA: React.FC = () => {
                 size="lg" 
                 variant="outline" 
                 className="h-auto w-full whitespace-normal rounded-full px-5 py-4 text-center text-sm md:w-auto md:px-8 md:py-6 md:text-base"
-                onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-                aria-label="Explore more free AI tools at AiWebTools.AI INSITE version"
+                onClick={() => openTeacher()}
+                aria-label="Explore more free AI tools INSITE version - opens the on-site AI teacher"
               >
                 Explore More Free AI Tools (INSITE version)
               </Button>
