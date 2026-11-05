@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import GlassMorphism from './ui/GlassMorphism';
 import AnimatedSection from './AnimatedSection';
+import { openTeacher } from '@/lib/open-teacher';
 
 const Hero: React.FC = () => {
   // Start with video automatically playing
@@ -49,8 +50,8 @@ const Hero: React.FC = () => {
             size="lg" 
             variant="outline" 
             className="h-auto w-full whitespace-normal rounded-full border-white px-5 py-4 text-center text-sm font-semibold text-white hover:bg-white/20 sm:w-auto sm:px-8 sm:py-6 sm:text-base"
-            onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-            aria-label="Explore more free AI tools at AiWebTools.AI INSITE version"
+            onClick={() => openTeacher()}
+            aria-label="Open the on-site AI teacher INSITE version"
           >
             Explore More Free AI Tools (INSITE version)
           </Button>

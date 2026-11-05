@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import GlassMorphism from './ui/GlassMorphism';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import { openTeacher } from '@/lib/open-teacher';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -72,7 +73,7 @@ const Navbar: React.FC = () => {
     { label: 'Learn Any Course GPT (INSITE version)', href: 'https://learnanycourse.lovable.app/' },
     { label: 'College Degree GPT (INSITE version)', href: 'https://college-degree-gpt.lovable.app/' },
     { label: 'Talk to History GPT (INSITE version)', href: 'https://talk-to-history-gpt.lovable.app/' },
-    { label: 'More AI Tools (INSITE version)', href: 'https://aiwebtools.lovable.app/?via=aiwebtools' },
+    { label: 'More AI Tools (INSITE version)', href: '#ai-teacher', internal: true },
   ];
 
   return (
@@ -87,14 +88,14 @@ const Navbar: React.FC = () => {
             </svg>
             <div className="flex flex-col min-w-0">
               <span className="font-bold text-sm sm:text-base lg:text-lg tracking-tight text-gray-900 truncate">Learn Any Skill GPT</span>
-              <a href="https://aiwebtools.lovable.app/?via=aiwebtools" target="_blank" rel="noopener noreferrer" className="text-[10px] sm:text-xs text-gray-600 hover:underline truncate">Presented by AiWebTools.AI (INSITE version)</a>
+              <a href="#ai-teacher" onClick={openTeacher} className="text-[10px] sm:text-xs text-gray-600 hover:underline truncate">Presented by AiWebTools.AI (INSITE version)</a>
             </div>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden min-[1440px]:flex items-center gap-3 2xl:gap-6 ml-4">
             {navLinks.map(link => (
-              <a key={link.label} href={link.href} target="_blank" rel="noopener noreferrer" className="link-underline text-xs lg:text-sm font-medium text-gray-900 whitespace-nowrap">
+              <a key={link.label} href={link.href} {...(link.internal ? { onClick: openTeacher } : { target: "_blank", rel: "noopener noreferrer" })} className="link-underline text-xs lg:text-sm font-medium text-gray-900 whitespace-nowrap">
                 {link.label}
               </a>
             ))}
@@ -131,11 +132,10 @@ const Navbar: React.FC = () => {
             {navLinks.map(link => (
               <a 
                 key={link.label}
-                href={link.href} 
-                target="_blank" 
-                rel="noopener noreferrer" 
+                href={link.href}
+                {...(link.internal ? {} : { target: "_blank", rel: "noopener noreferrer" })}
                 className="block py-2.5 text-sm font-medium text-gray-900 active:bg-accent/50 rounded-md px-2 -mx-2 touch-manipulation"
-                onClick={closeMobileMenu}
+                onClick={(e) => { if (link.internal) openTeacher(e); closeMobileMenu(); }}
               >
                 {link.label}
               </a>

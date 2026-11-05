@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { openTeacher } from '@/lib/open-teacher';
 import { Button } from '@/components/ui/button';
 import AnimatedSection from './AnimatedSection';
 import GlassMorphism from './ui/GlassMorphism';
@@ -15,8 +16,8 @@ const CTA: React.FC = () => {
         <Button 
           size="lg" 
           className="h-auto w-full whitespace-normal rounded-md bg-gray-800 px-4 py-4 text-center text-base font-semibold shadow-lg transition-all hover:bg-gray-700 sm:w-auto sm:px-8 sm:py-6 sm:text-lg"
-          onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-          aria-label="Explore AiWebTools.AI free AI tools collection INSITE version"
+          onClick={() => openTeacher()}
+          aria-label="Explore AiWebTools.AI free AI tools INSITE version - opens the on-site AI teacher"
         >
           Explore AiWebTools.AI - Free AI Tools (INSITE version)
         </Button>
@@ -46,8 +47,8 @@ const CTA: React.FC = () => {
                 size="lg" 
                 variant="outline" 
                 className="h-auto w-full whitespace-normal rounded-full px-5 py-4 text-center text-sm md:w-auto md:px-8 md:py-6 md:text-base"
-                onClick={() => window.open('https://aiwebtools.lovable.app/?via=aiwebtools', '_blank')}
-                aria-label="Explore more free AI tools at AiWebTools.AI INSITE version"
+                onClick={() => openTeacher()}
+                aria-label="Explore more free AI tools INSITE version - opens the on-site AI teacher"
               >
                 Explore More Free AI Tools (INSITE version)
               </Button>
